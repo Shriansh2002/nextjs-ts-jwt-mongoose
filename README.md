@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js TypeScript JWT Mongoose Template
 
-## Getting Started
+This project is a template for building a web application using Next.js, TypeScript, JSON Web Tokens (JWT), and MongoDB with Mongoose.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+-   User authentication using JWT
+-   User registration and login
+-   Protected routes
+-   MongoDB integration with Mongoose
+-   Example API endpoints
+-   Frontend built with Next.js and React
+-   Backend server using Next.js API routes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository: `git clone https://github.com/Shriansh2002/nextjs-ts-jwt-mongoose`
+2. Navigate to the project directory: `cd nextjs-ts-jwt-mongoose`
+3. Install the dependencies: `yarn`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Configuration
 
-## Learn More
+1. Rename `.env.example` file to `.env` and update the configuration variables:
+    - `MONGO_URI`: MongoDB connection URL
+    - `TOKEN_SECRET`: Secret key for JWT authentication
 
-To learn more about Next.js, take a look at the following resources:
+## Running the Application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Start the development server: `yarn dev`
+2. Open the application in your browser: `http://localhost:3000`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+-   Next.js
+-   TypeScript
+-   Tailwind CSS
+-   Axios
+-   Bcrypt
+-   JSON Web Token
+-   React Hot Toast
+-   Mongoose
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Folder Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ├── public/                 # Static files
+    ├── src/                    # All Source Files
+    │    ├── app/               # Next.js app
+    │    │     ├── api/         # Next.js API routes
+    │    │     ├── login/       # Login page
+    │    │     ├── signup/      # Signup page
+    │    ├── favicon.ico        # Favicon
+    │    ├── globals.css        # CSS
+    │    ├── layout.tsx         # Layout component
+    │    ├── page.tsx           # Home Page
+    │    ├── pages/             # Next.js pages
+    │    ├── components/        # Reusable components
+    │    ├── dbConfig/          # MongoDB connection
+    │    ├── helpers/           # Helper functions
+    │    ├── models/            # Mongoose models
+    │    ├── middleware.ts      # Middleware functions
+    ├── .env.example            # Environment variables
+    └── ...
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
